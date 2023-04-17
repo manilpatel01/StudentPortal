@@ -1,0 +1,125 @@
+#navigation-bar {
+  z-index: 999;
+  position: relative;
+  border-bottom: solid 2px #eee;
+}
+#navigation-bar .navbar-brand {
+  max-width: 80%;
+}
+#navigation-bar .navbar-toggler {
+  background-color: #efefef;
+  border: 2px solid #101010;
+  outline: none;
+}
+#navigation-bar .nav-item a {
+  color: #687074;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+#navigation-bar .nav-item a:hover {
+  color: #fff;
+  background: #00008b;
+}
+#navigation-bar .dropdown-toggle::after {
+  margin-left: 0.3rem;
+}
+#navigation-bar li.dropdown.show .dropdown-toggle::after {
+  border-top: 0;
+  border-bottom: 0.3rem solid;
+}
+
+#navigation-bar .overlay {
+  height: 100%;
+  z-index: 30;
+  position: fixed;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(34, 34, 34, 0.6);
+  transition: opacity 0.2s linear, visibility 0.1s, width 1s ease-in;
+}
+
+/* Desktop Screen */
+@media (min-width: 992px) {
+  #navigation-bar .navbar-collapse {
+    position: relative;
+    max-height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    padding-left: 9rem;
+    padding-right: 2rem;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  #navigation-bar .navbar-nav {
+    top: 1px;
+    float: left;
+    position: relative;
+  }
+  #navigation-bar .navbar-nav > li {
+    margin-left: -1px;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+  }
+  #navigation-bar .nav-item a {
+    font-size: 13px;
+    padding: 10px 20px;
+    color: #687074;
+    font-weight: 400;
+    text-align: center;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+  }
+  #navigation-bar ul.dropdown-menu {
+    padding-bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #navigation-bar ul.dropdown-menu > li {
+    border-bottom: 2px solid #eee;
+  }
+}
+
+/* Mobile Screen */
+@media (max-width: 991px) {
+  #navigation-bar .nav-item a {
+    font-size: 14px;
+    padding: 10px 30px;
+    border-bottom: solid 1px #eee;
+  }
+  #navigation-bar ul.dropdown-menu {
+    margin: 0 2rem;
+    border: none;
+    background-color: #efefef;
+  }
+
+  #navigation-bar .mobile-sidebar {
+    visibility: hidden;
+    transform: translateX(100%);
+    border-radius: 0;
+    background-color: #efefef;
+    display: block;
+    position: fixed;
+    right: 0;
+    z-index: 1200;
+    width: 80%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: visibility 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+
+  #navigation-bar .mobile-sidebar.show {
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  #navigation-bar .overlay.show {
+    transition: opacity 0.5s ease, width 0s;
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+  }
+}

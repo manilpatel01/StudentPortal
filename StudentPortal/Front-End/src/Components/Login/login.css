@@ -1,0 +1,6 @@
+
+.form-group.role-error::after{
+    content: "select type";
+    color: red;
+    text-align: center;
+}

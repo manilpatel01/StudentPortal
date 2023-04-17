@@ -1,0 +1,121 @@
+body {
+  font-family: Raleway;
+}
+
+/* form  */
+.regForm {
+  background-color: #eceef1;
+  font-family: Raleway;
+  padding: 40px;
+  margin: 15px 0;
+  box-shadow: 0px 10px 20px 4px #00000015;
+  border-radius: 7px;
+}
+
+.regForm .form-title {
+  color: #4db3a5;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 400 !important;
+}
+
+/* step indicator */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbc0c;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+.step.active {
+  opacity: 1;
+}
+.step.finish {
+  background-color: #4caf50;
+}
+
+/* form inputs*/
+.regForm .form-control {
+  padding: 10px;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+.regForm button {
+  padding: 10px 20px;
+}
+
+/* hide ALL step */
+.formPage {
+  display: none;
+}
+
+/* error */
+label.error {
+  color: red;
+  padding-left: 5px;
+}
+
+/* re password */
+#repassword p {
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* upload img */
+
+.upload-photo {
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important;
+  border-radius: 50% !important;
+}
+
+.upload-sign {
+  width: auto;
+  height: 75px;
+}
+
+.uploadDocument {
+  width: 190px;
+  height: auto;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important;
+}
+
+#editProfileForm .uploadSign {
+  width: 100%;
+}
+
+/* profile-title */
+
+.profile-title {
+  margin-top: 20px;
+  padding: 20px 30px;
+  background-color: #28a745;
+  border-radius: 12px;
+}
+
+.profile-title .title-text {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@media (max-width: 575px) {
+  ul.viewProfileTab > li {
+    max-width: 33.33%;
+  }
+}
+
+/* footer */
+.footer {
+  background: #000219;
+  border-top: none;
+}
+
+.footer p {
+  color: #dadada;
+  margin-top: 12px;
+}

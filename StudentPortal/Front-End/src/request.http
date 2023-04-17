@@ -1,0 +1,78 @@
+
+
+
+
+get http://localhost:8080/admin/adminDashbord
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpdDFAZ21haWwuY29tIiwiZXhwIjoxNTk0ODY1MjM2LCJpYXQiOjE1OTQ4MjkyMzZ9.wKnP5ooBxzieBSf7xKMYYOgYUWb1DQuf986lnxGlt-4
+Domain:ADMIN
+
+###
+POST http://localhost:8080/api/authenticate
+Content-Type: application/json
+
+{
+    "username":"170280116025",
+    "password":"Kanani@123",
+    "type":"STUDENT"
+}
+
+###
+get http://localhost:8080/api/student/data
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNzAyODAxMTYwMjUiLCJleHAiOjE1OTU2MzUwMTQsImlhdCI6MTU5NTU5OTAxNH0.6uPRkNnl4O5dQAeOwmiylt9qH_EFo8P-SJhoJj8rlv4
+Domain:STUDENT
+
+POST http://localhost:8080/authenticate HTTP/1.1
+Content-Type: multipart/form-data
+
+{
+    aadhar: "914780126221"
+addmission_year: "2017"
+admission_category: "general"
+blood_group: "B+"
+branch: "16"
+caste: "st"
+confirm_password: "Kanani@123"
+contact: "9586958695"
+course: "BE"
+date_of_birth: "2005-12-22"
+email: "mavanidp5@gmail.com"
+enrollment: "170280116036"
+family_income: "1200000"
+father_name: "DNJDJN"
+father_occupation: "SSS"
+first_name: "Dipen"
+gender: "female"
+hsc_pr: "99.45"
+hsc_year: "2017"
+last_name: "fjduiu"
+middle_name: "dipen"
+mother_name: "DKJDKLJLDJ"
+mother_occupation: "SSS"
+off_add_city: "surat"
+off_add_country: "IN"
+off_add_l1: "215,shivshakti society"
+off_add_l2: "SDD"
+off_add_pin_code: "395010"
+off_add_state: "gujarat"
+password: "Kanani@123"
+pr_add_city: "surat"
+pr_add_country: "IN"
+pr_add_l1: "215,shivshakti society"
+pr_add_l2: "DD"
+pr_add_pin_code: "395010"
+pr_add_state: "gujarat"
+re_add_city: "surat"
+re_add_country: "IN"
+re_add_l1: "215,shivshakti society"
+re_add_l2: "DD"
+re_add_pin_code: "395010"
+re_add_state: "gujarat"
+religion: "HINDU"
+semester: "1"
+ssc_pr: "99.65"
+ssc_year: "2017"
+student_photo: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABVYA"
+student_sign: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB"
+}
